@@ -24,6 +24,8 @@ namespace Prop2ModelList
             worker.RunWorkerCompleted += worker_RunWorkerCompleted;
 
             Status("Ready to begin.");
+            Status("To start, use the 'Browse' button to select a propdump file.");
+            Status("Then click 'Go!' to begin processing the file.");
 
         }
 
@@ -60,7 +62,7 @@ namespace Prop2ModelList
             List<string> aModelsOut = new List<string>();
 
             string sInFile = textFileIn.Text;
-            string line;
+            string line, sOutFile;
 
             // Check to make sure file exists, bail if not
             if (!File.Exists(sInFile))
@@ -124,12 +126,13 @@ namespace Prop2ModelList
             aModelsOut.Sort();
 
             // Open the output file for writing
-            System.IO.StreamWriter outfile = new System.IO.StreamWriter(Path.GetDirectoryName(sInFile) + "\\model_list.txt", true);
+            sOutFile = Path.GetDirectoryName(sInFile) + "\\model_list.txt";
+            System.IO.StreamWriter outfile = new System.IO.StreamWriter(sOutFile, true);
+            bgWorker.ReportProgress(0, "Writing output file: " + sOutFile);
             foreach (string x in aModelsOut)
             {
                 outfile.WriteLine(x);
             }
-
             outfile.Close();
          
         }

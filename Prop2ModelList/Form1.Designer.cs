@@ -48,16 +48,16 @@
             // 
             this.textFileIn.Location = new System.Drawing.Point(93, 21);
             this.textFileIn.Name = "textFileIn";
-            this.textFileIn.Size = new System.Drawing.Size(333, 20);
+            this.textFileIn.Size = new System.Drawing.Size(346, 20);
             this.textFileIn.TabIndex = 1;
             // 
             // butBrowse
             // 
-            this.butBrowse.Location = new System.Drawing.Point(432, 20);
+            this.butBrowse.Location = new System.Drawing.Point(445, 20);
             this.butBrowse.Name = "butBrowse";
-            this.butBrowse.Size = new System.Drawing.Size(92, 23);
+            this.butBrowse.Size = new System.Drawing.Size(79, 23);
             this.butBrowse.TabIndex = 2;
-            this.butBrowse.Text = "button1";
+            this.butBrowse.Text = "Browse";
             this.butBrowse.UseVisualStyleBackColor = true;
             this.butBrowse.Click += new System.EventHandler(this.butBrowse_Click);
             // 
@@ -65,9 +65,9 @@
             // 
             this.butGo.Location = new System.Drawing.Point(12, 55);
             this.butGo.Name = "butGo";
-            this.butGo.Size = new System.Drawing.Size(75, 23);
+            this.butGo.Size = new System.Drawing.Size(111, 23);
             this.butGo.TabIndex = 3;
-            this.butGo.Text = "Go!";
+            this.butGo.Text = "Create Model List";
             this.butGo.UseVisualStyleBackColor = true;
             this.butGo.Click += new System.EventHandler(this.butGo_Click);
             // 
@@ -90,7 +90,7 @@
             this.Controls.Add(this.textFileIn);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Prop2ModelList";
             this.ResumeLayout(false);
             this.PerformLayout();
 
