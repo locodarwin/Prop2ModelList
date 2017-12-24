@@ -2,8 +2,6 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading;
 using System.ComponentModel;
 using System.Collections.Generic;
 
@@ -23,9 +21,11 @@ namespace Prop2ModelList
             worker.ProgressChanged += worker_ProgressChanged;
             worker.RunWorkerCompleted += worker_RunWorkerCompleted;
 
+            
+
             Status("Ready to begin.");
             Status("To start, use the 'Browse' button to select a propdump file.");
-            Status("Then click 'Go!' to begin processing the file.");
+            Status("Then click 'Create Model List' to begin processing it.");
 
         }
 

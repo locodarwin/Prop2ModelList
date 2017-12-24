@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.textFileIn = new System.Windows.Forms.TextBox();
             this.butBrowse = new System.Windows.Forms.Button();
@@ -89,6 +90,7 @@
             this.Controls.Add(this.butBrowse);
             this.Controls.Add(this.textFileIn);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Prop2ModelList";
             this.ResumeLayout(false);
